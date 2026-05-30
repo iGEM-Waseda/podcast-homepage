@@ -1,16 +1,9 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { caveat, londrinaOutline } from "../lib/fonts";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import Script from "next/script";
+import Header from "@/components/header/Header";
+// import Footer from "@/components/footer/Footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -24,10 +17,54 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      lang="ja"
+      className={`h-full antialiased font-semibold`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <head>
+        <Script id="adobe-fonts" strategy="afterInteractive">
+          {`
+            (function(d) {
+              var config = {
+                kitId: 'hsk3cin',
+                scriptTimeout: 3000,
+                async: true
+              },
+              h=d.documentElement,
+              t=setTimeout(function(){
+                h.className=h.className.replace(/\\bwf-loading\\b/g,"")+" wf-inactive";
+              },config.scriptTimeout),
+              tk=d.createElement("script"),
+              f=false,
+              s=d.getElementsByTagName("script")[0],
+              a;
+
+              h.className+=" wf-loading";
+              tk.src='https://use.typekit.net/'+config.kitId+'.js';
+              tk.async=true;
+
+              tk.onload=tk.onreadystatechange=function(){
+                a=this.readyState;
+                if(f || (a && a!="complete" && a!="loaded")) return;
+                f=true;
+                clearTimeout(t);
+                try {
+                  Typekit.load(config);
+                } catch(e) {}
+              };
+
+              s.parentNode.insertBefore(tk,s)
+            })(document);
+          `}
+        </Script>
+      </head>
+
+      <body className="min-h-full flex flex-col">
+        <Header />
+        <main>
+          {children}
+        </main>
+        {/* <Footer /> */}
+      </body>
     </html>
   );
 }
