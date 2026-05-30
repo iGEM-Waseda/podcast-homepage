@@ -1,0 +1,26 @@
+import { londrinaOutline } from "@/lib/fonts";
+
+export default function DnaSequenceMarquee() {
+    const seq =
+      "CGGTCGGTTCCGGGGCCCTATTCATATGAAACTTTTAAAAGTAGCGGTCGGTTCCGGGGCCCTATTCATATGAAACTTTTAAAAGTAGCGGTCGGTTCCGGGGCCCTATTCATATGAAACTTTTAA";
+  
+    return (
+      <div className={`overflow-hidden bg-neutral-700 py-0.5 ${londrinaOutline.className}`}>
+        <div
+          className="
+            flex
+            w-max
+            animate-dna-scroll
+            whitespace-nowrap
+            text-2xl
+            lg:text-4xl
+            text-white
+            tracking-widest
+          "
+        >
+          <span>{seq}</span>
+          <span>{seq}</span>
+        </div>
+      </div>
+    );
+  }
