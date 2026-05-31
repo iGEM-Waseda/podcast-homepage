@@ -22,7 +22,7 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: "ads-shinshowten", sans-serif;
+  /* font-family: "ads-shinshowten", sans-serif; */
 }
 
 @keyframes dna-scroll {
@@ -36,5 +36,5 @@ body {
 }
 
 .animate-dna-scroll {
-  animation: dna-scroll 60s linear infinite;
+  animation: dna-scroll 90s linear infinite;
 }

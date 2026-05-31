@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import { caveat, londrinaOutline } from "../lib/fonts";
+import { kiwiMaru } from "../lib/fonts";
 import "./globals.css";
-import Script from "next/script";
+// import Script from "next/script";
 import Header from "@/components/header/Header";
 // import Footer from "@/components/footer/Footer";
 
@@ -18,9 +18,9 @@ export default function RootLayout({
   return (
     <html
       lang="ja"
-      className={`h-full antialiased font-semibold`}
+      className={`${kiwiMaru.className} h-full antialiased`}
     >
-      <head>
+      {/* <head>
         <Script id="adobe-fonts" strategy="afterInteractive">
           {`
             (function(d) {
@@ -56,7 +56,7 @@ export default function RootLayout({
             })(document);
           `}
         </Script>
-      </head>
+      </head> */}
 
       <body className="min-h-full flex flex-col">
         <Header />
