@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html
       lang="ja"
-      className={`${kiwiMaru.className} h-full antialiased`}
+      className={`${kiwiMaru.className} h-full antialiased bg-background`}
     >
       {/* <head>
         <Script id="adobe-fonts" strategy="afterInteractive">
