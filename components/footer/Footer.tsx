@@ -14,16 +14,16 @@ export default function Footer() {
           </div> */}
 
           <div>
-            <Link href={pages[0].href} className="hover:text-yellow transition-colors text-xl sm:text-2xl md:text-3xl font-medium tracking-wide">{pages[0].label}</Link>
+            <Link href={pages[0].href} className="hover:text-customblack transition-colors text-xl sm:text-2xl md:text-3xl font-medium tracking-wide">{pages[0].label}</Link>
             <div className="grid gap-y-5 gap-x-8 text-lg sm:text-xl md:text-2xl ml-3 mt-5">
-              <Link href={pages[1].href} className="hover:text-yellow transition-colors w-fit">{pages[1].label}</Link>
-              <Link href={pages[2].href} className="hover:text-yellow transition-colors w-fit">{pages[2].label}</Link>
+              <Link href={pages[1].href} className="hover:text-customblack transition-colors w-fit">{pages[1].label}</Link>
+              <Link href={pages[2].href} className="hover:text-customblack transition-colors w-fit">{pages[2].label}</Link>
             </div>
           </div>
 
           <div className="flex flex-col space-y-5 text-xl sm:text-2xl md:text-3xl font-medium tracking-wide">
-            <Link href={pages[3].href} className="hover:text-yellow transition-colors w-fit">{pages[3].label}</Link>
-            <Link href={pages[4].href} className="hover:text-yellow transition-colors w-fit">{pages[4].label}</Link>
+            <Link href={pages[3].href} className="hover:text-customblack transition-colors w-fit">{pages[3].label}</Link>
+            <Link href={pages[4].href} className="hover:text-customblack transition-colors w-fit">{pages[4].label}</Link>
           </div>
 
           {/* <div className="relative">
