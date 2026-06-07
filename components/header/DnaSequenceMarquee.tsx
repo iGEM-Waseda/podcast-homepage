@@ -13,7 +13,7 @@ export default function DnaSequenceMarquee() {
             animate-dna-scroll
             whitespace-nowrap
             text-2xl
-            lg:text-4xl
+            xl:text-4xl
             text-white
             tracking-widest
           "
