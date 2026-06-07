@@ -1,36 +1,119 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Getting Started
 
-## Getting Started
+このプロジェクトは Next.js を使用して開発されています。
 
-First, run the development server:
+## 1. Node.js のインストール
+
+本プロジェクトを実行するには Node.js が必要です。
+
+### Windows / macOS
+
+1. [Node.js公式サイト](https://nodejs.org/ja)から最新版のLTS（推奨版）をダウンロードします。
+2. ダウンロードしたインストーラを実行し、画面の指示に従ってインストールします。
+
+インストール後、ターミナル（Windowsの場合は PowerShell または コマンドプロンプト）を開き、以下を実行してください。
+
+```bash
+node -v
+npm -v
+```
+
+バージョン番号が表示されればインストールは完了です。
+
+## 2. リポジトリの取得
+
+Git がインストールされていない場合は、先に Git をインストールしてください。
+
+リポジトリをクローンします。
+
+```bash
+cd <directory>
+git clone https://github.com/iGEM-Waseda/podcast-homepage.git
+cd podcast-homepage
+```
+
+GitHub の「Code」ボタンから表示される URL を `<repository-url>` に指定してください。
+
+## 3. 依存パッケージのインストール
+
+プロジェクトディレクトリで以下を実行します。
+
+```bash
+npm install
+```
+
+初回は数分かかる場合があります。
+
+## 4. 開発サーバーの起動
+
+以下のコマンドを実行します。
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+正常に起動すると、以下のようなメッセージが表示されます。
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+Local: http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 5. ブラウザで確認
+
+ブラウザで以下の URL を開いてください。
+
+```text
+http://localhost:3000
+```
+
+アプリケーションが表示されればセットアップ完了です。
+
+## 開発方法
+
+ページの内容は以下のファイルを編集することで変更できます。
+
+```text
+app/page.tsx
+```
+
+ファイルを保存すると、ブラウザが自動的に更新されます。
+
+## トラブルシューティング
+
+### `node: command not found`
+
+Node.js がインストールされていないか、PATH が正しく設定されていません。
+
+Node.js を再インストールしてください。
+
+### `npm: command not found`
+
+npm が正しくインストールされていません。
+
+Node.js を再インストールしてください。
+
+### `npm install` でエラーが発生する
+
+Node.js のバージョンが古い可能性があります。
+
+以下でバージョンを確認してください。
+
+```bash
+node -v
+```
+
+LTS版の利用を推奨します。
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+* Next.js Documentation: https://nextjs.org/docs
+* Learn Next.js: https://nextjs.org/learn
+* Next.js GitHub Repository: https://github.com/vercel/next.js
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deploy
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+デプロイには Vercel の利用を推奨します。
 
-## Deploy on Vercel
+詳細は以下を参照してください。
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+https://nextjs.org/docs/app/building-your-application/deploying
