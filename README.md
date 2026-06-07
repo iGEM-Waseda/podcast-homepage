@@ -1,5 +1,7 @@
 # 普段の開発方法
 
+編集中
+
 # Getting Started
 
 このプロジェクトは Next.js を使用して開発されています。
@@ -13,7 +15,7 @@
 1. [Node.js公式サイト](https://nodejs.org/ja)から最新版のLTS（推奨版）をダウンロードします。
 2. ダウンロードしたインストーラを実行し、画面の指示に従ってインストールします。
 
-インストール後、ターミナル（Windowsの場合は PowerShell または コマンドプロンプト）を開き、以下を実行してください。
+インストール後 PowerShell または コマンドプロンプトを開き、以下を実行してください。
 
 ```bash
 node -v
@@ -24,13 +26,16 @@ npm -v
 
 ## 2. リポジトリの取得
 
-好きなディレクトリに移動した上でリポジトリをクローンします。
+PowerShell または コマンドプロンプト上で好きなフォルダに移動し、リポジトリをクローンします。
 
 ```bash
 cd <directory>
 git clone https://github.com/iGEM-Waseda/podcast-homepage.git
 cd podcast-homepage
 ```
+
+`<directory>`にはフォルダのパスを入力してください。
+![](folder_path.png)
 
 ## 3. 依存パッケージのインストール
 
