@@ -3,7 +3,7 @@ import { kiwiMaru } from "../lib/fonts";
 import "./globals.css";
 // import Script from "next/script";
 import Header from "@/components/header/Header";
-// import Footer from "@/components/footer/Footer";
+import Footer from "@/components/footer/Footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -63,7 +63,7 @@ export default function RootLayout({
         <main>
           {children}
         </main>
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );
