@@ -2,16 +2,14 @@
 
 :root {
   --background: #d9e3e8;
-  --herobackground: #1e211b;
+  --customblack: #1e211b;
   --red: #cf2b0e;
-  --foreground: #000000;
 }
 
 @theme inline {
   --color-background: var(--background);
-  --color-herobackground: var(--herobackground);
+  --color-customblack: var(--customblack);
   --color-red: var(--red);
-  --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
