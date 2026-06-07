@@ -1,3 +1,5 @@
+# 普段の開発方法
+
 # Getting Started
 
 このプロジェクトは Next.js を使用して開発されています。
@@ -22,17 +24,13 @@ npm -v
 
 ## 2. リポジトリの取得
 
-Git がインストールされていない場合は、先に Git をインストールしてください。
-
-リポジトリをクローンします。
+好きなディレクトリに移動した上でリポジトリをクローンします。
 
 ```bash
 cd <directory>
 git clone https://github.com/iGEM-Waseda/podcast-homepage.git
 cd podcast-homepage
 ```
-
-GitHub の「Code」ボタンから表示される URL を `<repository-url>` に指定してください。
 
 ## 3. 依存パッケージのインストール
 
