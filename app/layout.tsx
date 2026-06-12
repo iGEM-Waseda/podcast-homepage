@@ -4,6 +4,7 @@ import "./globals.css";
 // import Script from "next/script";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
+import SocialFloating from "@/components/SocialFloating";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -64,6 +65,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <SocialFloating />
       </body>
     </html>
   );
