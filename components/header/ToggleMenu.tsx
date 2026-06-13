@@ -85,7 +85,7 @@ export default function ToggleMenu() {
               <Link
                 href={page.href}
                 onClick={handleLinkClick}
-                className="block px-5 py-3 text-lg text-gray-700 text-bold hover:bg-gray-50 transition-colors"
+                className="block px-5 py-3 text-lg text-gray-700 font-bold hover:bg-gray-50 transition-colors"
               >
                 {page.href === '/#igemwaseda' ? (
                   <>What is<br />&quot;iGEM - Waseda&quot;?</>
@@ -101,7 +101,7 @@ export default function ToggleMenu() {
               key={label}
               href={href}
               aria-label={label}
-              className={`text-gray-500 transition-colors ${color}`}
+              className={`transition-transform hover:scale-125 ${color}`}
             >
               {icon}
             </Link>
