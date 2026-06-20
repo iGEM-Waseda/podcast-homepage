@@ -40,3 +40,76 @@ body {
 .animate-dna-scroll {
   animation: dna-scroll 90s linear infinite;
 }
+
+/* sectionのスタイル */
+.section {
+  max-width: 1024px; /* max-w-screen-lg */
+  margin-left: auto; /* mx-auto */
+  margin-right: auto; /* mx-auto */
+  margin-top: 2rem; /* my-16 (64px) */
+  margin-bottom: 2rem; /* my-16 (64px) */
+  padding-left: 1rem; /* px-4 (16px) */
+  padding-right: 1rem; /* px-4 (16px) */
+}
+
+/* sm (640px以上) のスタイル */
+@media (min-width: 640px) {
+  .section {
+    margin-top: 4rem; /* sm:my-8 (32px) */
+    margin-bottom: 4rem; /* sm:my-8 (32px) */
+  }
+}
+
+/* md (768px以上) のスタイル */
+@media (min-width: 768px) {
+  .section {
+    padding-left: 2rem; /* md:px-8 (32px) */
+    padding-right: 2rem; /* md:px-8 (32px) */
+  }
+}
+
+/* h1 下のグラデーション横線アニメーション */
+.heading-underline {
+  display: block;
+  height: 10px;
+  background: linear-gradient(to right, #cf2b0e, transparent);
+  width: 0%;
+  transition: width 1s ease-out;
+}
+
+@media (min-width: 768px) {
+  .heading-underline {
+    height: 20px;
+  }
+}
+
+.heading.visible .heading-underline {
+  width: 100%;
+}
+
+/* h1のスタイル（スマホ向け） */
+.heading.mt-0-override {
+  margin-top: 0 !important;
+}
+
+.heading {
+  color: #cf2b0e;
+  font-weight: 500;
+  font-size: 2.5rem;
+  line-height: 2.5rem; /* text-4xl の行間 (40px) */
+  font-weight: 700; /* font-bold */
+  margin-left: auto; /* mx-auto */
+  margin-right: auto; /* mx-auto */
+  margin-top: 2rem; /* my-16 (64px) */
+  margin-bottom: 0.5rem; /* my-16 (64px) */
+}
+
+/* md (768px以上) のスタイル */
+@media (min-width: 768px) {
+  .heading {
+    font-size: 4.5rem;
+    line-height: 1; /* md:text-6xl の行間 */
+    margin-top: 4rem; /* my-16 (64px) */
+    margin-bottom: 2rem; /* my-16 (64px) */
+  }
+}
