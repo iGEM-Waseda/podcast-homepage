@@ -1,6 +1,74 @@
+半分AIに作らせて半分自分で書いたら、である調とですます調が混ざってしまった😇
 # 普段の開発方法
 
-編集中
+## 1. ブランチを切る
+
+必ずしも毎回やる必要はないが、`main`では開発しない。
+
+もし同じブランチで作業を続ける場合は、以下のコマンドを実行すると最新の`main`の状態と同期した上で開発できる。
+
+```bash
+git merge main
+```
+
+## 2. サーバーを起動
+
+```bash
+npm run dev
+```
+
+その後[http://localhost:3000](http://localhost:3000)を開く
+
+## 3. 開発する
+
+頑張る。Claude Codeなどを活用すると良い。
+
+CSSについて、サイトで学習した記法は`globals.css`などに以下のように記述する方法だった。
+
+```css
+.heading {
+  color: #cf2b0e;
+  font-weight: 500;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+```
+
+ただ、これは少々冗長なところがあり、かつわざわざCSSファイルに移動する手間が省けるなどのメリットがあるため、**Tailwind CSS**が使われることも多い。これらは別物というわけではなく、Tailwind CSSは裏で勝手にCSSに変換される。
+
+Tailwind CSSは`globals.css`のようなCSSファイルに書くのではなく、HTMLの各要素の`className`に直接書く。
+
+例：
+```HTML
+<p className="text-4xl md:text-5xl text-center text-red font-bold">Manaka</p>
+```
+
+記法はCSSとちょっと違ってくるので初めは慣れないが、AIに〇〇がしたいと聞けば教えてくれるので、たくさんいじってみて徐々に慣れながら覚えていくのが一番早いと思う。
+
+## 4. 確認する
+
+[http://localhost:3000](http://localhost:3000)で自分の思った通りの変更がなされているかを**必ず**確認する。レイアウトが崩れていたり、バグがあるのにコミットしない。それは誤字がある卒論を提出するようなもの。
+
+## 5. コミットする
+
+Gitにファイルの変更内容をセーブすることを**コミット(Commit)する**という。VS Codeに備わっているGUIからやるのが一番楽。
+
+## 6. プルリクエスト(Pull Request, PR, プルリク)を作成する
+
+自分の行った変更を特定のブランチ(今回なら`main`)に取り込むようお願いすることをプルリクエストという。レビュアーがそのコードを見て問題なさそうなら変更を特定のブランチにマージ(merge, 結合)する。
+
+コミットした上で[GitHubのリポジトリ](https://github.com/iGEM-Waseda/podcast-homepage)に移動する。その上で[このサイト](https://zenn.dev/gachigachi/articles/dcd833c56bd0ed)の**2.1.pull requestを作成する**を参考にプルリクエストを作成する。その時、Reviewerとして鳥山(kiha40-777, Minami-Aso-Mizuno-Umarerusato-Hakusui-Kogen)を指定する。  
+
+![](./reviewers.png)
+
+## 困った時は
+
+DMして
 
 # Getting Started
 
