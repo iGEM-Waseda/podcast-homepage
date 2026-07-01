@@ -64,7 +64,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         <LoadingScreen />
         <Header />
-        <main className="pt-[48px] xl:pt-[64px]">
+        <main className="">
           {children}
         </main>
         <Footer />
