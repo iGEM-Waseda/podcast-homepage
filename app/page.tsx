@@ -65,10 +65,6 @@ export default function Home() {
       <section className="section">
         <p className="text-5xl text-center pt-8">ここにDNAみたいなデザインが入る</p>
         <HeadingWithLine id="personality">Personality</HeadingWithLine>
-
-        {/* 齋藤さんへ まずはここの自己紹介を完成させた上で文字サイズなどをいじってみるといいと思います。
-          その時、Chromeを使っているならF12または右クリックして検証をクリックして開発者モードを開き、
-          画面サイズを変更しながらチェックするといいです(それがスタンダードなやり方なのかはちょっとわからない) */}
         <div className="flex flex-col md:flex-row gap-6 mt-6">
           <div className="flex-1 border border-red p-6 flex flex-col gap-6">
             <p className="text-4xl md:text-5xl text-center text-red font-bold">Eito</p>
