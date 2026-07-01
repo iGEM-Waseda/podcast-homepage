@@ -5,7 +5,7 @@ export default function DnaSequenceMarquee() {
       "CGGTCGGTTCCGGGGCCCTATTCATATGAAACTTTTAAAAGTAGCGGTCGGTTCCGGGGCCCTATTCATATGAAACTTTTAAAAGTAGCGGTCGGTTCCGGGGCCCTATTCATATGAAACTTTTAA";
   
     return (
-      <div className={`overflow-hidden bg-herobackground py-0.5 ${londrinaOutline.className}`}>
+      <div className={`overflow-hidden bg-customblack/60 backdrop-blur-sm py-0.5 ${londrinaOutline.className}`}>
         <div
           className="
             flex
