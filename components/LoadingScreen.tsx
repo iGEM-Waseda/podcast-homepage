@@ -2,12 +2,18 @@
 
 import { useEffect, useRef, useState } from 'react';
 
-const STRAND_COLORS = ['#e91e63', '#f48fb1', '#ffab91', '#c2185b', '#f06292'];
-
-function pick(z: number): string {
+function pick(z: number, light: boolean): string {
   const t = (z + 1) / 2;
-  const idx = Math.round(t * (STRAND_COLORS.length - 1));
-  return STRAND_COLORS[idx];
+  const h = ((320 + t * 50) % 360);
+  if (light) {
+    const s = 60 + t * 15;
+    const l = 65 + t * 20;
+    return `hsl(${h}, ${s}%, ${l}%)`;
+  } else {
+    const s = 80 + t * 15;
+    const l = 44 + t * 14;
+    return `hsl(${h}, ${s}%, ${l}%)`;
+  }
 }
 
 export default function LoadingScreen() {
@@ -44,12 +50,12 @@ export default function LoadingScreen() {
         const z1 = Math.cos(angle);
         const y1 = cy + amp * Math.sin(angle);
         const r1 = 3 + 4.5 * ((z1 + 1) / 2);
-        dots.push({ x, y: y1, r: r1, z: z1, color: pick(z1) });
+        dots.push({ x, y: y1, r: r1, z: z1, color: pick(z1, true) });
 
         const z2 = Math.cos(angle + Math.PI);
         const y2 = cy + amp * Math.sin(angle + Math.PI);
         const r2 = 3 + 4.5 * ((z2 + 1) / 2);
-        dots.push({ x, y: y2, r: r2, z: z2, color: pick(z2) });
+        dots.push({ x, y: y2, r: r2, z: z2, color: pick(z2, false) });
       }
 
       dots.sort((a, b) => a.z - b.z);
@@ -90,7 +96,7 @@ export default function LoadingScreen() {
       position: 'fixed', inset: 0, zIndex: 9999,
       background: '#d9e3e8',
       display: 'flex', alignItems: 'center', justifyContent: 'center',
-      transition: 'opacity 0.6s ease',
+      transition: 'opacity 0.8s ease',
       opacity: fading ? 0 : 1,
       pointerEvents: fading ? 'none' : 'auto',
     }}>
