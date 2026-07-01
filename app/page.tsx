@@ -58,7 +58,7 @@ function AbilityChart({ items }: { items: AbilityItem[] }) {
 export default function Home() {
   return (
     <>
-      <section className="relative w-full h-screen pt-[84px] xl:pt-[108px] flex justify-center overflow-hidden bg-customblack">
+      <section className="relative w-full h-[calc(100vh-48px)] xl:h-[calc(100vh-64px)] flex justify-center overflow-hidden bg-customblack">
         <p className="text-6xl text-center pt-8 text-white font-medium">あいじぇむわせだの、バイオな毎日</p>
       </section>
 
