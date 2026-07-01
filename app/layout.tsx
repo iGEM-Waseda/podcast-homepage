@@ -20,6 +20,7 @@ export default function RootLayout({
   return (
     <html
       lang="ja"
+      data-scroll-behavior="smooth"
       className={`${kiwiMaru.className} h-full antialiased bg-background`}
     >
       {/* <head>
