@@ -5,6 +5,7 @@ import "./globals.css";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
 import SocialFloating from "@/components/SocialFloating";
+import LoadingScreen from "@/components/LoadingScreen";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -60,6 +61,7 @@ export default function RootLayout({
       </head> */}
 
       <body className="min-h-full flex flex-col">
+        <LoadingScreen />
         <Header />
         <main className="pt-[48px] xl:pt-[64px]">
           {children}
