@@ -27,6 +27,21 @@ body {
   /* font-family: "ads-shinshowten", sans-serif; */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+/* id へのジャンプ時にヘッダー分オフセット */
+[id] {
+  scroll-margin-top: 84px;
+}
+
+@media (min-width: 1280px) {
+  [id] {
+    scroll-margin-top: 108px;
+  }
+}
+
 @keyframes dna-scroll {
   from {
     transform: translateX(0);
