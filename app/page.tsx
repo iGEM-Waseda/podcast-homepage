@@ -85,15 +85,15 @@ export default function Home() {
               <div>
                 <p className="text-sm md:text-base text-red font-semibold">Limiting Factor :</p>
                  <ul className="list-disc list-inside pl-8 mt-1.5 text-sm md:text-base text-red">
-                  <li>時間</li>
-                  <li>理想</li>
+                  <li>課題に取り掛かるまでの時間</li>
+                  <li>根拠の無い自信</li>
                  </ul>
               </div>
               <div>
                 <p className="text-sm md:text-base text-red font-semibold">Energy Source :</p>
                 <ul className="list-disc list-inside pl-8 mt-1.5 text-sm md:text-base text-red">
-                  <li>浪漫</li>
-                  <li>憧憬</li>
+                  <li>大喜利系の動画</li>
+                  <li>自分の中で旬が来た楽曲を鬼リピ（マイナーなことが多い…）</li>
                 </ul>
               </div>
             </div>
