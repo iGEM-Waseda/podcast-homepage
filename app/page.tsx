@@ -89,15 +89,15 @@ export default function Home() {
               <div>
                 <p className="text-sm md:text-base text-red font-semibold">Limiting Factor :</p>
                  <ul className="list-disc list-inside pl-8 mt-1.5 text-sm md:text-base text-red">
-                  <li>{/* ここに内容 */}</li>
-                  <li></li>
+                  <li>時間</li>
+                  <li>理想</li>
                  </ul>
               </div>
               <div>
                 <p className="text-sm md:text-base text-red font-semibold">Energy Source :</p>
                 <ul className="list-disc list-inside pl-8 mt-1.5 text-sm md:text-base text-red">
-                  <li></li>
-                  <li></li>
+                  <li>浪漫</li>
+                  <li>憧憬</li>
                 </ul>
               </div>
             </div>
