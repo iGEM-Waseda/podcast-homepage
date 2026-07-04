@@ -23,6 +23,16 @@
 git checkout new_branch
 ```
 
+<details>
+  <summary>なぜ<code>branch</code>を切るのか</summary>
+  <h3>一般的に</h3>
+  <hr />
+  <p><code>main</code>は常に動く状態にしておく必要がある。<code>main</code>から<code>branch</code>を切って開発することで、もし失敗しても<code>main</code>に影響を与えない、<code>main</code>に変更を取り込む前にレビューできる(プルリクエスト)、同時に複数人が作業しやすいなどのメリットがある。</p>
+  <h3>今回のようなWebフロントエンド開発の場合</h3>
+  <hr />
+  <p>Webフロントエンド開発では、<code>main</code>にプッシュすると自動的にその変更がサーバーに伝えられ、Webサイトが更新される形をとることがほとんどである。そのため、<code>main</code>の変更についてはより慎重に行わなければならない。</p>
+</details>
+
 ## 1-2. `main`ブランチの内容を取得する(オプション)
 もし同じブランチを使い続ける場合は、以下のコマンドを実行すると最新の`main`の状態と同期した上で開発できる。
 
