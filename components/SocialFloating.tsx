@@ -43,6 +43,7 @@ export default function SocialFloating() {
         <Link
           key={label}
           href={href}
+          target="_blank"
           aria-label={label}
           className={`flex items-center justify-center w-12 h-12 text-white transition-colors ${color}`}
         >
