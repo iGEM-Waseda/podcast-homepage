@@ -3,7 +3,7 @@ import Link from "next/link";
 const links = [
   {
     label: "Spotify",
-    href: "#",
+    href: "https://open.spotify.com/show/4ju3gd0CMRvHXxwUb7h1Rj",
     color: "hover:text-[#1DB954]",
     icon: (
       <svg viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
@@ -13,7 +13,7 @@ const links = [
   },
   {
     label: "YouTube",
-    href: "#",
+    href: "https://www.youtube.com/channel/UCJi_wnz54SsHm-91fpLvnWw",
     color: "hover:text-[#FF0000]",
     icon: (
       <svg viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
@@ -23,7 +23,7 @@ const links = [
   },
   {
     label: "Apple Podcasts",
-    href: "#",
+    href: "https://podcasts.apple.com/jp/podcast/%E3%81%82%E3%81%84%E3%81%98%E3%81%87%E3%82%80%E3%82%8F%E3%81%9B%E3%81%A0%E3%81%AE-%E3%83%90%E3%82%A4%E3%82%AA%E3%81%AA%E6%AF%8E%E6%97%A5/id1894288523",
     color: "hover:text-[#B150E2]",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
