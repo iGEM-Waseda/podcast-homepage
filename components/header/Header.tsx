@@ -17,7 +17,7 @@ export default function Header() {
             <div className="h-8 w-fit relative">
               <Link href="/" className="block h-full">
                 <Image
-                src="/iGEM-Waseda_home_logo.png"
+                src="/newlogo.png"
                 alt="iGEM - Waseda Logo"
                 width={750}
                 height={183}
